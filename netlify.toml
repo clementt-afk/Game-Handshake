@@ -1,0 +1,9 @@
+[build]
+  command = "mv app/api/game/route.ts app/api/game/route.cloudflare.ts && pnpm exec next build"
+  publish = ".next"
+
+[[redirects]]
+  from = "/api/game"
+  to = "https://cellule-au-feu-clement.fuseaux.chatgpt.site/api/game"
+  status = 200
+  force = true
